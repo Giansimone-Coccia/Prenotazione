@@ -2,10 +2,12 @@ package Prenota;
 
 public class Prenotazione {
 	
+	//Attributi
 	private String nome;
 	private int ora;
 	private int minuti;
 	
+	//Vari metodi get e set
 	public String getNome() {
 		return nome;
 	}

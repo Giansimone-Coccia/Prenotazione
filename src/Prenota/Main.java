@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//Creo l'oggetto per l'input e un vettore di Campo
 		Scanner input = new Scanner(System.in);
 		Campo vettore = new Campo();
 		
