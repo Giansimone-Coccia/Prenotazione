@@ -1,6 +1,10 @@
 package Prenota;
 import java.util.Scanner;
-
+/**
+ * Main class
+ * @author gians_ji5genm
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

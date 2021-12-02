@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Prenota","l":"Campo"},{"p":"Prenota","l":"Main"},{"p":"Prenota","l":"Prenotazione"}];updateSearchResults();

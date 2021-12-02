@@ -1,13 +1,24 @@
 package Prenota;
 import java.util.Scanner;
-
+/**
+ * Classe campo per la gestione del campo
+ * @author gians_ji5genm
+ *
+ */
 public class Campo {
 	//Creo l'oggetto per l'input
 	Scanner input = new Scanner(System.in);
 	//Definisco un vettore di Prenotazione
 	private static Prenotazione[] prenotazioni = new Prenotazione[24];
 
-	//Metodo per l'inserimento di una nuova preotazione
+	/**
+	 * Metodo per l'inserimento di una nuova preotazione
+	 * @param nome
+	 * @param ora
+	 * @param minuti
+	 * @return true se prenotazione andata a buon fine, false
+	 * altrimenti
+	 */
 	public boolean addPrenotazione(String nome, int ora, int minuti) {
 		if((ora < 8) || (ora > 20)) {
 			System.out.println("Hai inserito un'ora errata");
@@ -34,7 +45,14 @@ public class Campo {
 		return false;
 	}
 	
-	//Metodo per la rimozione di una prenotazione effettuata
+	/**
+	 * Metodo per la rimozione di una prenotazione effettuata
+	 * @param nome
+	 * @param ora
+	 * @param minuti
+	 * @return true se operazione eseguita con successo, false
+	 * altrimenti
+	 */
 	public boolean removePrenotazione(String nome, int ora, int minuti) {
 		if((ora < 8) || (ora > 20)) {
 			//System.out.println("Hai inserito un'ora errata");
@@ -56,7 +74,9 @@ public class Campo {
 		return false;
 	}
 	
-	//@override del metodo toString
+	/**
+	 * @override del metodo toString
+	 */
 	public String toString() {
 		return "Ecco la lista delle prenotazioni: " + prenotazioni;
 		/*String listaP = "";
